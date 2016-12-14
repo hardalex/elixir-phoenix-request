@@ -1,4 +1,9 @@
 # elixir-phoenix-request
+##Install
+```sh
+#./lib/{PROJECT-NAME}/request.ex
+```
+
 ##Require
 ```elixir
 #./mix.exs
