@@ -5,8 +5,8 @@ defmodule Common.Request do
                 {:ok, data} = Poison.decode(body)
             {:error, %HTTPoison.Error{reason: reason}} ->
                 data = %{error: reason}
-        end
-        data
+	    end
+            data
 	end
     def json(url, body) do
         case HTTPoison.post(url, body, [{"Accept", "application/json"}, {"Content-Type", "application/json"}]) do
