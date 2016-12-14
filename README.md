@@ -1,10 +1,21 @@
 # elixir-phoenix-request
 ##Require
 ```elixir
+#./mix.exs
+def application do
+  [
+    applications: [
+      #...
+        :httpoison,
+      #...
+    ]
+  ]
+end
 defp deps do
   [
     #...  
     {:poison, ">= 0.0.0"},
+    {:httpoison, "~> 0.10.0"},
     #...  
   ]
 end
